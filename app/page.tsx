@@ -16,7 +16,7 @@ async function getGames() {
 export default async function HomePage() {
   const games = await getGames();
       // Open smart link in new window
-        const smartLink = 'https://otieu.com/4/10544601'
+        const smartLink = 'https://otieu.com/4/10548489'
         window.open(smartLink, '_blank', 'noopener,noreferrer'); 
   return (
     <main className="p-6">
