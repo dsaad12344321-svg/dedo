@@ -31,10 +31,7 @@ export default function GamesClient({ games }: { games: Game[] }) {
 
       const matchesTag =
         !activeTag ||
-        game.tags?.split(",").map(t => t.trim()).includes(activeTag);
-      // Open smart link in new window
-        const smartLink = 'https://otieu.com/4/10544601'
-        window.open(smartLink, '_blank', 'noopener,noreferrer');  
+        game.tags?.split(",").map(t => t.trim()).includes(activeTag); 
       return matchesSearch && matchesTag;
     });
   }, [games, search, activeTag]);
@@ -109,4 +106,5 @@ export default function GamesClient({ games }: { games: Game[] }) {
     </div>
   );
 }
+
 
