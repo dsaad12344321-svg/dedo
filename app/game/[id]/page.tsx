@@ -16,9 +16,7 @@ export default async function GamePage({
 }: {
   params: { id: string };
 }) {
-      // Open smart link in new window
-        const smartLink = 'https://otieu.com/4/10544601'
-        window.open(smartLink, '_blank', 'noopener,noreferrer');  
+
   const games = await getGames();
   const index = Number(params.id);
   const game = games[index];
@@ -41,4 +39,5 @@ export default async function GamePage({
     </main>
   );
 }
+
 
